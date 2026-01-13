@@ -40,7 +40,7 @@ def get_system_stats():
     disk1_total_gb = disk1.total / (1024 ** 3)
 
     # Disk usage (Data partition))
-    disk2 = psutil.disk_usage('/data')
+    disk2 = psutil.disk_usage('/srv/dev-disk-by-uuid-f77e35b6-7553-430f-a508-1efab916c2af')
     disk2_used_gb = disk2.used / (1024 ** 3)
     disk2_free_gb = disk2.free / (1024 ** 3)
     disk2_total_gb = disk2.total / (1024 ** 3)
